@@ -18,9 +18,12 @@ public class AddUser2dummy {
 	@FindBy (xpath="//button[text()=' Add User ']")
 	private WebElement AddUserbutton;
 	
+	@FindBy (xpath="//button[text()=' Add User ']")
+	private WebElement AddUserbutton1;
 	
 	
-	//Variable Initialization
+	
+	//Variable Initializationdddd
 	
 	WebDriver driver;
 	public AddUser2dummy(WebDriver driver) {
@@ -38,6 +41,6 @@ public class AddUser2dummy {
 		UserManagement.click();
      }
 	
-		
+	
 	
 }
