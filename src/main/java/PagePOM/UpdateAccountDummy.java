@@ -34,7 +34,7 @@ public class UpdateAccountDummy {
 	//Variable Initialization
 	
 	WebDriver driver;
-	public UpdateAccount(WebDriver driver) {
+	public UpdateAccountDummy(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 		this.driver=driver;  
 	}
