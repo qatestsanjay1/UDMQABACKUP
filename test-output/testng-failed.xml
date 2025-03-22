@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Smoke_Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="extendReport.ExtentTestNGIReporterListener"/>
+  </listeners>
+  <test thread-count="2" parallel="tests" name="Chrome_Test(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="TestClass.Login_and_Add_DeleteUserTest">
+        <methods>
+          <include name="Open_the_Application"/>
+          <include name="To_verify_after_passing_OTP_application_allow_to_click_on_login_button"/>
+          <include name="To_verify_application_allow_to_delete_user"/>
+          <include name="To_verify_whether_application_allows_editing_data_in_the_logo_input_field_and_updates_it_successfully_or_not"/>
+          <include name="To_verify_whether_application_allows_editing_data_in_customer_care_field_and_updates_it_successfully_or_not"/>
+          <include name="OpenBrowser"/>
+          <include name="To_verify_application_allow_to_click_on_update_account_tab"/>
+          <include name="To_verify_application_showing_Unlock_user_in_account_status"/>
+          <include name="To_verify_application_allow_to_create_New_user_after_passing_valid_data_in_all_input_fields"/>
+          <include name="To_verify_application_allow_to_click_on_add_user_button"/>
+          <include name="clearObject"/>
+          <include name="To_verify_search_functionality_if_we_pass_valid_username_in_search_bar"/>
+          <include name="To_verify_search_functionality_if_we_pass_invalid_username_in_search_bar"/>
+          <include name="To_verify_application_allow_to_click_and_pass_data_in_current_password_input_field"/>
+          <include name="To_verify_created_user_showing_in_user_list"/>
+          <include name="To_verify_change_password_functionality_if_we_pass_invalid_current_password_while_changing_password"/>
+          <include name="createPOMObject"/>
+          <include name="To_verify_application_allow_to_click_and_pass_data_in_new_password_input_field"/>
+          <include name="To_verify_application_allow_to_click_on_edit_button"/>
+          <include name="To_verify_application_allow_to_click_on_change_password_tab"/>
+          <include name="afterTest"/>
+          <include name="To_verify_application_allow_to_click_on_settings_and_then_User_management_tab"/>
+          <include name="afterMethod"/>
+          <include name="To_verify_change_password_functionality_if_we_pass_valid_data_in_all_fields"/>
+        </methods>
+      </class> <!-- TestClass.Login_and_Add_DeleteUserTest -->
+      <class name="TestClass.DeviceOnboardTest">
+        <methods>
+          <include name="To_verify_application_allow_to_enter_data_in_imei2_input_field"/>
+          <include name="To_verify_application_allow_to_send_lock_command_to_device_via_action"/>
+          <include name="To_verify_application_allow_to_send_wipe_data_command_to_device_via_action"/>
+          <include name="To_Verify_Search_functionality_by_passing_imei"/>
+          <include name="To_verify_application_allow_to_select_device_type"/>
+          <include name="To_verify_Is_application_allow_to_enroll_alreday_exists_device_on_portal"/>
+          <include name="To_verify_is_application_allow_to_click_on_command_history_tab"/>
+          <include name="To_verify_Is_application_allow_to_click_on_action_option"/>
+          <include name="afterMethod"/>
+          <include name="To_verify_after_search_imei_is_reset_button_working_as_expected"/>
+          <include name="To_verify_application_allow_to_send_Unlock_command_to_device_via_action"/>
+          <include name="To_verify_on_view_device_page_application_allow_to_click_on_close_button"/>
+          <include name="createPOMObject"/>
+          <include name="OpenBrowser"/>
+          <include name="To_Verify_application_allow_to_click_on_broadcast_message_tab"/>
+          <include name="To_Verify_The_login_functionality_after_changing_password"/>
+          <include name="To_verify_application_allow_to_click_on_view_device_option_via_action"/>
+          <include name="To_verify_Is_application_allow_to_click_on_device_list_tab"/>
+          <include name="clearObject"/>
+          <include name="To_verify_application_allow_to_click_on_device_onboard_tab"/>
+          <include name="To_verify_after_search_imei_then_command_history_show_for_specific_device"/>
+          <include name="afterTest"/>
+          <include name="To_Verify_On_Acknowledgement_page_application_allow_to_click_on_Agree_button"/>
+          <include name="To_verify_application_allow_to_click_on_view_command_status_via_action"/>
+          <include name="To_verify_on_view_command_status_page_application_allow_to_click_on_close_button"/>
+          <include name="To_verify_application_allow_to_create_broadcast_message"/>
+          <include name="Open_the_Application"/>
+          <include name="To_verify_application_allow_to_enter_data_in_manufacture_input_field"/>
+          <include name="To_verify_application_allow_to_enter_data_in_imei1_input_field"/>
+          <include name="To_verify_application_allow_to_send_reboot_device_command_to_device_via_action"/>
+        </methods>
+      </class> <!-- TestClass.DeviceOnboardTest -->
+    </classes>
+  </test> <!-- Chrome_Test(failed) -->
+</suite> <!-- Failed suite [Smoke_Suite] -->

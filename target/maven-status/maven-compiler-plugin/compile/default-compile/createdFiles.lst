@@ -1,0 +1,7 @@
+PagePOM\BroadcastMessage.class
+PagePOM\ChangePassword.class
+PagePOM\LoginPage.class
+PagePOM\DeviceOnboard.class
+PagePOM\UpdateAccount.class
+Utils\Utility.class
+PagePOM\AddUser.class

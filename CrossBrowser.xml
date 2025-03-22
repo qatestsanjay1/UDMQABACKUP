@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Smoke_Suite" thread-count="2" parallel="tests">
+    
+    <listeners>
+        <listener class-name="extendReport.ExtentTestNGIReporterListener"/>
+    </listeners>
+    
+    <test name="Chrome_Test" thread-count="2">
+        <parameter name="browser" value="Chrome"/>
+        <classes>
+            <class name="TestClass.Login_and_Add_DeleteUserTest"/>
+            <class name="TestClass.DeviceOnboardTest"/>
+        </classes>
+    </test> <!-- Chrome_Test -->
+    
+    
+    <test name="FireFox_Test" thread-count="2">
+	  <parameter name="browser" value="Firefox"/>
+    <classes>
+	  <class name="TestClass.Policy_And_BroadcastMessage"/>
+    </classes>
+  </test> <!-- Smoke_Test -->
+    
+</suite> <!-- Smoke_Suite -->
